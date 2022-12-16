@@ -1,5 +1,5 @@
-Scrivere una funzione chiamata somma che riceve come input due numeri interi e produce in output la somma dei due
 //scriviamo in pseudocodice, segno con // i commenti, lo pseudocodice è quello senza il // davanti
+Scrivere una funzione chiamata somma che riceve come input due numeri interi e produce in output la somma dei due
 
 Funzione somma(numero1, numero2)
 //scrivo nome della funzione, tra parentesi gli input che riceve
@@ -9,5 +9,32 @@ Funzione somma(numero1, numero2)
 
     //restituisco il risultato (output)
     restituisco risultato
+    fine
 
-    //fine
+
+Scrivere la funzione che riceve due numeri e restituisce il piu grande
+
+Funzione maggiore(numero1, numero2)
+    //verifico quale dei due numeri è piu grande
+    se numero1 > numero2
+    allora
+        risultato = numero1
+    altrimenti
+        risultato = numero2
+    //restituisco il risultato del numero piu grande
+    fine
+
+
+Scrivere la funzione controllo che riceve due numeri e restituisce "uguali" se sono uguali, "diversi" se sono diversi
+
+Funzione controllo(numero1, numero2)
+    //verifico che i due numeri siano identici
+    se numero1 = numero2
+    allora
+        risultato = "uguali"
+    altrimenti
+        risultato = "diversi"
+    fine se
+    restituisco risultato
+    //restituisco il risultato se sono diversi o uguali
+    fine
