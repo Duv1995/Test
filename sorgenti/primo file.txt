@@ -1,0 +1,13 @@
+Scrivere una funzione chiamata somma che riceve come input due numeri interi e produce in output la somma dei due
+//scriviamo in pseudocodice, segno con // i commenti, lo pseudocodice è quello senza il // davanti
+
+Funzione somma(numero1, numero2)
+//scrivo nome della funzione, tra parentesi gli input che riceve
+
+    //calcolo risultato
+    risultato = numero1 + numero2
+
+    //restituisco il risultato (output)
+    restituisco risultato
+
+    //fine
