@@ -1,0 +1,126 @@
+ESERCIZI PSEUDOCODICE
+1)	Scrivi la funzione confronta che riceve due numeri e stampa “primo” se solo il primo numero è più grande del secondo, stampa “secondo” negli altri casi
+
+Funzione confronta(numero1, numero2)
+    //verifico se il primo numero è piu grande
+    se numero1 > numero2
+    allora
+        risultato = "primo"
+    altrimenti
+        risultato = "secondo"
+    fine se
+    restituisco risultato
+    fine
+
+2)	Scrivi la funzione moltiplica che riceve 2 numeri e stampa il loro prodotto
+
+Funzione moltiplica(numero1, numero2)
+    //calcolo prodotto dei due numero
+    risultato = numero1 * numero2
+    restituisco risultato
+    fine
+
+3)	Scrivi la funzione elabora che riceve tre numeri a, b, c e stampa a+b⋅c se a è più grande di b, stampa (a+b)/c altrimenti
+
+Funzione elabora (a, b, c)
+    //definisco se a è piu grande di b
+     se a > b
+     allora
+        stampa = a+b⋅c
+    altrimenti
+        stampa = (a+b)/c
+    fine se
+    fine
+
+
+
+
+VERIFICA 1
+Scrivi lo pseudocodice della funzione chiamata Calcola, che riceve quattro numeri chiamati a, b, c, d e restituisce il risultato di a*b+c*d
+
+Funzione calcola(a, b, c, d)
+//calcolo il risultato in un unica espressione, 
+confidando che l'elaboratore riesca a farcela senza che io debba insegnargli come funzionano le espressioni...
+    risultato = a*b+c*d
+    restituisci risultato
+    fine
+
+
+
+
+VERIFICA 2
+Scrivi lo pseudocodice della funzione chiamata Negativi, che riceve due numeri e restituisce 
+il numero di quelli che hanno segno negativo (restituisce 0 se tutti hanno segno positivo)
+
+Funzione negativi(numero1, numero2)
+//definisco tutti e tre i possibili risultati
+
+    //definisco il caso in cui entrambi i numeri sono negativi
+    se numero1 < 0 e numero2 < 0
+    allora
+        risultato = 2
+    fine se
+
+    //definisco i casi in cui c'è solo un numero negativo
+    se numero1 < 0 e numero2 > 0
+    o
+    se numero1 < 0 e numero2 > 0
+    allora
+        risultato = 1
+    fine se
+
+    //definisco il caso in cui entrambi i numeri sono positivi
+    se numero1 > 0 e numero2 > 0
+    allora
+        risultato = 0
+    fine se
+
+    fine
+    
+ALTRIMENTI 
+Risolvo con logica incrementale
+
+funzione negativi(numero1, numero2)
+    //inizializzo il risultato tramite un contantore
+    risultato = 0
+
+    //se il primo numero è negativo, incremento il risultato
+    se numero1 < 0
+    allora
+    risultato = risultato + 1
+    fine se
+
+    //se il secondo numero è negativo, incremento il risultato
+    se numero2 < 0
+    allora
+    risultato = risultato + 1
+    fine se
+
+    //restituisco il risultato
+    restituisci risultato
+    fine
+
+
+ALTRIMENTI
+Racchiudendo gli altri casi in un altrimenti
+
+Funzione negativi(numero1, numero2)
+
+//verifico che entrambi siano negativi
+se numero1 < 0 e numero2 < 0
+    allora
+        risultato = 2
+    altrimenti
+        //verifico che entrambi siano positivi
+        se numero1 > 0 e numero2 > 0
+        allora
+            risultato = 0
+        altrimenti
+        //non c'è bisogno che scrivo gli altri casi rimasti, li metto semplicemente racchiusi in un altrimenti
+            risultato = 1
+        fine se
+fine se
+
+//restituisco il risultato
+    restituisci risultato
+    fine
